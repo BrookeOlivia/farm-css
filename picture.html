@@ -4,252 +4,271 @@
 	<meta charset="utf-8">
 	<title></title>
 	<link rel="stylesheet" href="styles.css">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>	<script type="text/javascript">
-		$(document).ready(function(){
-			alert("hello bunny!");
-			$(".bunny").click(function(){
-				alert("YES?");
-				$( "#bunny" ).animate({
-			    left: "+50"
-			  }, 100, function() {
-			    // Animation complete.
-			  });
-			});
-		});
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>	
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script type="text/javascript">
+		   $( function() {
+		   		$( "#lamb" ).draggable();
+		   		$( "#bigPumpkin" ).draggable();
+		   		$( "#babyPumpkin-one" ).draggable();
+		   		$( "#babyPumpkin-two" ).draggable();
+		   		$( "#babyPumpkin-three" ).draggable();
+		   		$( "#babyPumpkin-four" ).draggable();
+		   		$( "#babyPumpkin-five" ).draggable();
+		   		$( "#fullcorn" ).draggable();
+		   		$( "#fullcorn2" ).draggable();
+		   		$( "#fullcorn3" ).draggable();
+		   		$( "#fullcorn4" ).draggable();
+		   		$( "#fullcorn5" ).draggable();
+		   		$( "#fullcorn6" ).draggable();
+		   		$( "#fullcorn7" ).draggable();
+		   		$( "#fullcorn8" ).draggable();
+		   		$( "#fullcorn9" ).draggable();
+		   		$( "#fullcorn10" ).draggable();
+		   		$( "#bunny" ).draggable();
+  			} );
+
+		   $(document).ready(function(){
+		   		var height = $(document).height();
+			   	height = height + "px";
+			   	$('body').css('height', height);
+
+		   });
 	</script>
 </head>
 
 <body>
 
-	<div class="sun">	
-		<div class="rays"></div>
-		<div class="rays2"></div>
+	<div id="sun">	
+		<div id="rays"></div>
+		<div id="rays2"></div>
 	</div>
 	
 	<div id="bigPumpkin">
-		<div class="pumpkin"></div>
-		<div class="stem"></div>
-		<div class="pumpkinCurve"></div>
-		<div class="pumpkinCurve1"></div>
-		<div class="pumpkinCurve2"></div>
-		<div class="pumpkinCurve3"></div>
-		<div class="pumpkinCurve4"></div>
-		<div class="pumpkinCurve5"></div>
+		<div id="pumpkin"></div>
+		<div id="stem"></div>
+		<div id="pumpkinCurve"></div>
+		<div id="pumpkinCurve1"></div>
+		<div id="pumpkinCurve2"></div>
+		<div id="pumpkinCurve3"></div>
+		<div id="pumpkinCurve4"></div>
+		<div id="pumpkinCurve5"></div>
 	</div>
 
-	<div class="babyPumpkin one">
-		<div class="babyStem1"></div>
-		<div class="babyPumpkinCurve"></div>
-		<div class="babyPumpkinCurve1"></div>
-		<div class="babyPumpkinCurve2"></div>
-		<div class="babyPumpkinCurve3"></div>
-		<div class="babyPumpkinCurve4"></div>
-		<div class="babyPumpkinCurve5"></div>
+	<div class="babyPumpkin" id="babyPumpkin-one">
+		<div id="babyStem1"></div>
+		<div id="babyPumpkinCurve"></div>
+		<div id="babyPumpkinCurve1"></div>
+		<div id="babyPumpkinCurve2"></div>
+		<div id="babyPumpkinCurve3"></div>
+		<div id="babyPumpkinCurve4"></div>
+		<div id="babyPumpkinCurve5"></div>
 	</div>
 
-	<div class="babyPumpkin two">
-		<div class="babyStem1"></div>
-		<div class="babyPumpkinCurve"></div>
-		<div class="babyPumpkinCurve1"></div>
-		<div class="babyPumpkinCurve2"></div>
-		<div class="babyPumpkinCurve3"></div>
-		<div class="babyPumpkinCurve4"></div>
-		<div class="babyPumpkinCurve5"></div>
+	<div class="babyPumpkin" id="babyPumpkin-two">
+		<div id="babyStem1"></div>
+		<div id="babyPumpkinCurve"></div>
+		<div id="babyPumpkinCurve1"></div>
+		<div id="babyPumpkinCurve2"></div>
+		<div id="babyPumpkinCurve3"></div>
+		<div id="babyPumpkinCurve4"></div>
+		<div id="babyPumpkinCurve5"></div>
 	</div>
 
-	<div class="babyPumpkin three">
-		<div class="babyStem1"></div>
-		<div class="babyPumpkinCurve"></div>
-		<div class="babyPumpkinCurve1"></div>
-		<div class="babyPumpkinCurve2"></div>
-		<div class="babyPumpkinCurve3"></div>
-		<div class="babyPumpkinCurve4"></div>
-		<div class="babyPumpkinCurve5"></div>
+	<div class="babyPumpkin" id="babyPumpkin-three">
+		<div id="babyStem1"></div>
+		<div id="babyPumpkinCurve"></div>
+		<div id="babyPumpkinCurve1"></div>
+		<div id="babyPumpkinCurve2"></div>
+		<div id="babyPumpkinCurve3"></div>
+		<div id="babyPumpkinCurve4"></div>
+		<div id="babyPumpkinCurve5"></div>
 	</div>
 
-	<div class="babyPumpkin four">
-		<div class="babyStem1"></div>
-		<div class="babyPumpkinCurve"></div>
-		<div class="babyPumpkinCurve1"></div>
-		<div class="babyPumpkinCurve2"></div>
-		<div class="babyPumpkinCurve3"></div>
-		<div class="babyPumpkinCurve4"></div>
-		<div class="babyPumpkinCurve5"></div>
+	<div class="babyPumpkin" id="babyPumpkin-four">
+		<div id="babyStem1"></div>
+		<div id="babyPumpkinCurve"></div>
+		<div id="babyPumpkinCurve1"></div>
+		<div id="babyPumpkinCurve2"></div>
+		<div id="babyPumpkinCurve3"></div>
+		<div id="babyPumpkinCurve4"></div>
+		<div id="babyPumpkinCurve5"></div>
 	</div>
 
-	<div class="babyPumpkin five">
-		<div class="babyStem1"></div>
-		<div class="babyPumpkinCurve"></div>
-		<div class="babyPumpkinCurve1"></div>
-		<div class="babyPumpkinCurve2"></div>
-		<div class="babyPumpkinCurve3"></div>
-		<div class="babyPumpkinCurve4"></div>
-		<div class="babyPumpkinCurve5"></div>
+	<div class="babyPumpkin" id="babyPumpkin-five">
+		<div id="babyStem1"></div>
+		<div id="babyPumpkinCurve"></div>
+		<div id="babyPumpkinCurve1"></div>
+		<div id="babyPumpkinCurve2"></div>
+		<div id="babyPumpkinCurve3"></div>
+		<div id="babyPumpkinCurve4"></div>
+		<div id="babyPumpkinCurve5"></div>
 	</div>
 
-	<div class="fullcorn">	
-		<div class="corn"></div>
-		<div class="cornEar"></div>
-		<div class="cornHusk"></div>
-		<div class="cornEar2"></div>
-		<div class="cornHusk2"></div>
-		<div class="silk"></div>
-		<div class="silk1"></div>
-		<div class="silk2"></div>
-		<div class="silk3"></div>
-		<div class="silk4"></div>
-		<div class="dirt"></div>
+	<div id="fullcorn">	
+		<div id="corn"></div>
+		<div id="cornEar"></div>
+		<div id="cornHusk"></div>
+		<div id="cornEar2"></div>
+		<div id="cornHusk2"></div>
+		<div id="silk"></div>
+		<div id="silk1"></div>
+		<div id="silk2"></div>
+		<div id="silk3"></div>
+		<div id="silk4"></div>
+		<div id="dirt"></div>
 	</div>
 	
-	<div class="fullcorn2">	
-		<div class="corn"></div>
-		<div class="cornEar"></div>
-		<div class="cornHusk"></div>
-		<div class="cornEar2"></div>
-		<div class="cornHusk2"></div>
-		<div class="silk"></div>
-		<div class="silk1"></div>
-		<div class="silk2"></div>
-		<div class="silk3"></div>
-		<div class="silk4"></div>
-		<div class="dirt"></div>
+	<div id="fullcorn2">	
+		<div id="corn"></div>
+		<div id="cornEar"></div>
+		<div id="cornHusk"></div>
+		<div id="cornEar2"></div>
+		<div id="cornHusk2"></div>
+		<div id="silk"></div>
+		<div id="silk1"></div>
+		<div id="silk2"></div>
+		<div id="silk3"></div>
+		<div id="silk4"></div>
+		<div id="dirt"></div>
 	</div>
-	<div class="fullcorn3">	
-		<div class="corn"></div>
-		<div class="cornEar"></div>
-		<div class="cornHusk"></div>
-		<div class="cornEar2"></div>
-		<div class="cornHusk2"></div>
-		<div class="silk"></div>
-		<div class="silk1"></div>
-		<div class="silk2"></div>
-		<div class="silk3"></div>
-		<div class="silk4"></div>
-		<div class="dirt"></div>
-	</div>
-	
-	<div class="fullcorn4">	
-		<div class="corn"></div>
-		<div class="cornEar"></div>
-		<div class="cornHusk"></div>
-		<div class="cornEar2"></div>
-		<div class="cornHusk2"></div>
-		<div class="silk"></div>
-		<div class="silk1"></div>
-		<div class="silk2"></div>
-		<div class="silk3"></div>
-		<div class="silk4"></div>
-		<div class="dirt"></div>
+	<div id="fullcorn3">	
+		<div id="corn"></div>
+		<div id="cornEar"></div>
+		<div id="cornHusk"></div>
+		<div id="cornEar2"></div>
+		<div id="cornHusk2"></div>
+		<div id="silk"></div>
+		<div id="silk1"></div>
+		<div id="silk2"></div>
+		<div id="silk3"></div>
+		<div id="silk4"></div>
+		<div id="dirt"></div>
 	</div>
 	
-	<div class="fullcorn5">	
-		<div class="corn"></div>
-		<div class="cornEar"></div>
-		<div class="cornHusk"></div>
-		<div class="cornEar2"></div>
-		<div class="cornHusk2"></div>
-		<div class="silk"></div>
-		<div class="silk1"></div>
-		<div class="silk2"></div>
-		<div class="silk3"></div>
-		<div class="silk4"></div>
-		<div class="dirt"></div>
+	<div id="fullcorn4">	
+		<div id="corn"></div>
+		<div id="cornEar"></div>
+		<div id="cornHusk"></div>
+		<div id="cornEar2"></div>
+		<div id="cornHusk2"></div>
+		<div id="silk"></div>
+		<div id="silk1"></div>
+		<div id="silk2"></div>
+		<div id="silk3"></div>
+		<div id="silk4"></div>
+		<div id="dirt"></div>
 	</div>
 	
-	<div class="fullcorn6">	
-		<div class="corn"></div>
-		<div class="cornEar"></div>
-		<div class="cornHusk"></div>
-		<div class="cornEar2"></div>
-		<div class="cornHusk2"></div>
-		<div class="silk"></div>
-		<div class="silk1"></div>
-		<div class="silk2"></div>
-		<div class="silk3"></div>
-		<div class="silk4"></div>
-		<div class="dirt"></div>
+	<div id="fullcorn5">	
+		<div id="corn"></div>
+		<div id="cornEar"></div>
+		<div id="cornHusk"></div>
+		<div id="cornEar2"></div>
+		<div id="cornHusk2"></div>
+		<div id="silk"></div>
+		<div id="silk1"></div>
+		<div id="silk2"></div>
+		<div id="silk3"></div>
+		<div id="silk4"></div>
+		<div id="dirt"></div>
 	</div>
 	
-	<div class="fullcorn7">	
-		<div class="corn"></div>
-		<div class="cornEar"></div>
-		<div class="cornHusk"></div>
-		<div class="cornEar2"></div>
-		<div class="cornHusk2"></div>
-		<div class="silk"></div>
-		<div class="silk1"></div>
-		<div class="silk2"></div>
-		<div class="silk3"></div>
-		<div class="silk4"></div>
-		<div class="dirt"></div>
+	<div id="fullcorn6">	
+		<div id="corn"></div>
+		<div id="cornEar"></div>
+		<div id="cornHusk"></div>
+		<div id="cornEar2"></div>
+		<div id="cornHusk2"></div>
+		<div id="silk"></div>
+		<div id="silk1"></div>
+		<div id="silk2"></div>
+		<div id="silk3"></div>
+		<div id="silk4"></div>
+		<div id="dirt"></div>
 	</div>
 	
-	<div class="fullcorn8">	
-		<div class="corn"></div>
-		<div class="cornEar"></div>
-		<div class="cornHusk"></div>
-		<div class="cornEar2"></div>
-		<div class="cornHusk2"></div>
-		<div class="silk"></div>
-		<div class="silk1"></div>
-		<div class="silk2"></div>
-		<div class="silk3"></div>
-		<div class="silk4"></div>
-		<div class="dirt"></div>
+	<div id="fullcorn7">	
+		<div id="corn"></div>
+		<div id="cornEar"></div>
+		<div id="cornHusk"></div>
+		<div id="cornEar2"></div>
+		<div id="cornHusk2"></div>
+		<div id="silk"></div>
+		<div id="silk1"></div>
+		<div id="silk2"></div>
+		<div id="silk3"></div>
+		<div id="silk4"></div>
+		<div id="dirt"></div>
 	</div>
 	
-	<div class="fullcorn9">	
-		<div class="corn"></div>
-		<div class="cornEar"></div>
-		<div class="cornHusk"></div>
-		<div class="cornEar2"></div>
-		<div class="cornHusk2"></div>
-		<div class="silk"></div>
-		<div class="silk1"></div>
-		<div class="silk2"></div>
-		<div class="silk3"></div>
-		<div class="silk4"></div>
-		<div class="dirt"></div>
+	<div id="fullcorn8">	
+		<div id="corn"></div>
+		<div id="cornEar"></div>
+		<div id="cornHusk"></div>
+		<div id="cornEar2"></div>
+		<div id="cornHusk2"></div>
+		<div id="silk"></div>
+		<div id="silk1"></div>
+		<div id="silk2"></div>
+		<div id="silk3"></div>
+		<div id="silk4"></div>
+		<div id="dirt"></div>
 	</div>
 	
-	<div class="fullcorn10">	
-		<div class="corn"></div>
-		<div class="cornEar"></div>
-		<div class="cornHusk"></div>
-		<div class="cornEar2"></div>
-		<div class="cornHusk2"></div>
-		<div class="silk"></div>
-		<div class="silk1"></div>
-		<div class="silk2"></div>
-		<div class="silk3"></div>
-		<div class="silk4"></div>
-		<div class="dirt"></div>
+	<div id="fullcorn9">	
+		<div id="corn"></div>
+		<div id="cornEar"></div>
+		<div id="cornHusk"></div>
+		<div id="cornEar2"></div>
+		<div id="cornHusk2"></div>
+		<div id="silk"></div>
+		<div id="silk1"></div>
+		<div id="silk2"></div>
+		<div id="silk3"></div>
+		<div id="silk4"></div>
+		<div id="dirt"></div>
 	</div>
-	<div class="lamb">
-		<div class="lambBody"></div>
-		<div class="lambHead"></div>
-		<div class="lambTail"></div>
-		<div class="lambRightFrontLeg"></div>
-		<div class="lambLeftFrontLeg"></div>
-		<div class="lambRightBackLeg"></div>
-		<div class="lambLeftBackLeg"></div>
-		<div class="eye"></div>
-		<div class="lambEar"></div>
-		<div class="lambNose"></div>
-		<div class="lambMouth"></div>
+	
+	<div id="fullcorn10">	
+		<div id="corn"></div>
+		<div id="cornEar"></div>
+		<div id="cornHusk"></div>
+		<div id="cornEar2"></div>
+		<div id="cornHusk2"></div>
+		<div id="silk"></div>
+		<div id="silk1"></div>
+		<div id="silk2"></div>
+		<div id="silk3"></div>
+		<div id="silk4"></div>
+		<div id="dirt"></div>
 	</div>
-	<div class="bunny" id="bunny">
-		<div class="bunnyBody"></div>
-		<div class="bunnyHead"></div>
-		<div class="bunnyTail"></div>
-		<div class="bunnyFrontFoot"></div>
-		<div class="bunnyBackFoot"></div>
-		<div class="hipJoint"></div>
-		<div class="bunnyBackEar"></div>
-		<div class="bunnyFrontEar"></div>
-		<div class="bunnyFrontInnerEar"></div>
-		<div class="bunnyEye"></div>
-		<div class="bunnyNose"></div>
+	<div id="lamb" id="lamb">
+		<div id="lambBody"></div>
+		<div id="lambHead"></div>
+		<div id="lambTail"></div>
+		<div id="lambRightFrontLeg"></div>
+		<div id="lambLeftFrontLeg"></div>
+		<div id="lambRightBackLeg"></div>
+		<div id="lambLeftBackLeg"></div>
+		<div id="eye"></div>
+		<div id="lambEar"></div>
+		<div id="lambNose"></div>
+		<div id="lambMouth"></div>
+	</div>
+	<div id="bunny" id="bunny">
+		<div id="bunnyBody"></div>
+		<div id="bunnyHead"></div>
+		<div id="bunnyTail"></div>
+		<div id="bunnyFrontFoot"></div>
+		<div id="bunnyBackFoot"></div>
+		<div id="hipJoint"></div>
+		<div id="bunnyBackEar"></div>
+		<div id="bunnyFrontEar"></div>
+		<div id="bunnyFrontInnerEar"></div>
+		<div id="bunnyEye"></div>
+		<div id="bunnyNose"></div>
 	</div>
 </body>
 </html>
